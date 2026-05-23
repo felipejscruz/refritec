@@ -1,3 +1,5 @@
+/* ================= RESET ================= */
+
 *{
   margin:0;
   padding:0;
@@ -6,9 +8,69 @@
 }
 
 body{
+  overflow-x:hidden;
+  background:#f5f7fb;
+}
+
+/* ================= HEADER ================= */
+
+header{
 
   width:100%;
-  height:100vh;
+  height:110px;
+
+  background:#00116d;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  padding:0 60px;
+
+  position:fixed;
+  top:0;
+  left:0;
+
+  z-index:1000;
+}
+
+.logo img{
+  width:260px;
+}
+
+/* ================= MENU ================= */
+
+nav{
+  display:flex;
+  align-items:center;
+  gap:45px;
+}
+
+nav a{
+
+  color:white;
+
+  text-decoration:none;
+
+  font-size:19px;
+
+  display:flex;
+  align-items:center;
+  gap:10px;
+
+  transition:0.3s;
+}
+
+nav a:hover{
+  color:#42c2ff;
+}
+
+/* ================= CONTAINER ================= */
+
+.container{
+
+  width:100%;
+  min-height:100vh;
 
   background:
   linear-gradient(rgba(0,0,0,0.65),
@@ -22,15 +84,10 @@ body{
   justify-content:center;
   align-items:center;
 
-  padding:20px;
+  padding:150px 20px 40px;
 }
 
-.container{
-  width:100%;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-}
+/* ================= CARD ================= */
 
 .card{
 
@@ -48,15 +105,21 @@ body{
   text-align:center;
 }
 
-.logo{
+.card-logo{
   width:220px;
   margin-bottom:20px;
 }
 
 .card h1{
+
   color:#00116d;
+
   margin-bottom:30px;
+
+  font-size:34px;
 }
+
+/* ================= INPUTS ================= */
 
 .input-group{
 
@@ -64,7 +127,7 @@ body{
 
   background:#f1f1f1;
 
-  border-radius:12px;
+  border-radius:14px;
 
   margin-bottom:18px;
 
@@ -75,7 +138,9 @@ body{
 }
 
 .input-group i{
+
   color:#00116d;
+
   font-size:18px;
 }
 
@@ -93,6 +158,8 @@ body{
   font-size:16px;
 }
 
+/* ================= BOTÃO ================= */
+
 button{
 
   width:100%;
@@ -105,7 +172,7 @@ button{
 
   padding:18px;
 
-  border-radius:12px;
+  border-radius:14px;
 
   font-size:18px;
   font-weight:bold;
@@ -119,11 +186,15 @@ button:hover{
   transform:scale(1.03);
 }
 
+/* ================= LINKS ================= */
+
 .link{
 
   margin-top:25px;
 
   font-size:15px;
+
+  color:#444;
 }
 
 .link a{
@@ -135,7 +206,64 @@ button:hover{
   font-weight:bold;
 }
 
-/* RESPONSIVO */
+/* ================= FOOTER ================= */
+
+footer{
+
+  background:#00116d;
+
+  color:white;
+
+  text-align:center;
+
+  padding:22px;
+
+  font-size:18px;
+}
+
+/* ================================================= */
+/* ================= RESPONSIVO ==================== */
+/* ================================================= */
+
+@media(max-width:900px){
+
+  header{
+
+    height:auto;
+
+    flex-direction:column;
+
+    padding:20px;
+
+    gap:20px;
+  }
+
+  .logo img{
+    width:220px;
+  }
+
+  nav{
+
+    width:100%;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:20px;
+  }
+
+  nav a{
+    font-size:16px;
+  }
+
+  .container{
+    padding-top:220px;
+  }
+
+}
+
+/* ================= CELULAR ================= */
 
 @media(max-width:500px){
 
@@ -143,8 +271,20 @@ button:hover{
     padding:30px 20px;
   }
 
-  .logo{
+  .card-logo{
     width:170px;
+  }
+
+  .card h1{
+    font-size:28px;
+  }
+
+  nav{
+    flex-direction:column;
+  }
+
+  nav a{
+    font-size:15px;
   }
 
 }
