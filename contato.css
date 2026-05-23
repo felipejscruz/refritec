@@ -185,76 +185,7 @@ footer{
   font-size:16px;
 }
 
-/* ================= HEADER ================= */
 
-header{
-
-  width:100%;
-
-  background:#00116d;
-
-  display:flex;
-
-  justify-content:space-between;
-
-  align-items:center;
-
-  padding:15px 25px;
-
-  position:fixed;
-
-  top:0;
-
-  left:0;
-
-  z-index:1000;
-}
-
-/* LOGO */
-
-.logo img{
-
-  width:220px;
-}
-
-/* MENU DESKTOP */
-
-nav{
-
-  display:flex;
-
-  align-items:center;
-
-  gap:35px;
-}
-
-nav a{
-
-  color:white;
-
-  text-decoration:none;
-
-  font-size:18px;
-
-  display:flex;
-
-  align-items:center;
-
-  gap:10px;
-}
-
-/* BOTÃO MOBILE */
-
-.menu-mobile{
-
-  display:none;
-
-  color:white;
-
-  font-size:32px;
-
-  cursor:pointer;
-}
 
 /* ================================================= */
 /* ================= RESPONSIVO ==================== */
