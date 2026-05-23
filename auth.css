@@ -221,6 +221,63 @@ footer{
   font-size:18px;
 }
 
+.btnNovo{
+
+  display:inline-block;
+
+  background:#0077ff;
+
+  color:white;
+
+  padding:15px 25px;
+
+  border-radius:12px;
+
+  text-decoration:none;
+
+  font-weight:bold;
+
+  margin-bottom:30px;
+}
+
+.agendamento{
+
+  width:100%;
+
+  background:#f3f3f3;
+
+  padding:20px;
+
+  border-radius:15px;
+
+  margin-top:20px;
+
+  text-align:left;
+}
+
+.agendamento h3{
+
+  color:#00116d;
+
+  margin-bottom:10px;
+}
+
+select,
+textarea{
+
+  width:100%;
+
+  border:none;
+
+  outline:none;
+
+  background:none;
+
+  padding:18px;
+
+  font-size:16px;
+}
+
 /* ================================================= */
 /* ================= RESPONSIVO ==================== */
 /* ================================================= */
