@@ -410,3 +410,77 @@ textarea{
   }
 
 }
+/* ================= MENU MOBILE ================= */
+
+.menu-mobile{
+
+  display:none;
+
+  color:white;
+
+  font-size:32px;
+
+  cursor:pointer;
+}
+
+/* ================================================= */
+/* ================= RESPONSIVO ==================== */
+/* ================================================= */
+
+@media(max-width:768px){
+
+  header{
+
+    height:auto;
+
+    padding:15px 20px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+  }
+
+  .logo img{
+
+    width:170px;
+  }
+
+  /* BOTÃO HAMBURGUER */
+
+  .menu-mobile{
+
+    display:block;
+  }
+
+  /* MENU */
+
+  nav{
+
+    width:100%;
+
+    display:none;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:20px;
+
+    padding-top:25px;
+  }
+
+  nav.ativo{
+
+    display:flex;
+  }
+
+  nav a{
+
+    font-size:18px;
+  }
+
+}
