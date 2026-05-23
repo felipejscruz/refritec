@@ -13,7 +13,21 @@
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 </head>
+<script>
 
+  const btnMenu =
+  document.getElementById("btnMenu");
+
+  const menu =
+  document.getElementById("menu");
+
+  btnMenu.addEventListener("click", ()=>{
+
+    menu.classList.toggle("ativo");
+
+  });
+
+</script>
 <body>
 
     <header>
@@ -21,12 +35,12 @@
   <div class="logo">
       <a href="index.html">
         <img src="logo.png" alt="REFRITEC">
-    </a>
+      </a>
     </div>
 
   <!-- BOTÃO MENU -->
 
-  <div class="menu-mobile" onclick="abrirMenu()">
+  <div class="menu-mobile" id="btnMenu">
 
     <i class="fa-solid fa-bars"></i>
 
@@ -54,6 +68,7 @@
   </nav>
 
 </header>
+
 
   <div class="container">
 
