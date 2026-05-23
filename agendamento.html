@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport"
+  content="width=device-width, initial-scale=1.0">
+
+  <title>Novo Agendamento</title>
+
+  <link rel="stylesheet" href="auth.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="card">
+
+      <h1>Novo Agendamento</h1>
+
+      <form id="agendamentoForm">
+
+        <div class="input-group">
+
+          <select id="servico" required>
+
+            <option value="">
+              Escolha o serviço
+            </option>
+
+            <option>
+              Agendamento de Freezer
+            </option>
+
+            <option>
+              Instalação de Ar
+            </option>
+
+            <option>
+              Limpeza e Manutenção de Ar
+            </option>
+
+            <option>
+              Manutenção em Geladeira
+            </option>
+
+            <option>
+              Câmara Frigorífica
+            </option>
+
+          </select>
+
+        </div>
+
+        <div class="input-group">
+
+          <textarea
+          id="observacoes"
+          placeholder="Observações do serviço"
+          rows="5"></textarea>
+
+        </div>
+
+        <button type="submit">
+
+          AGENDAR
+
+        </button>
+
+      </form>
+
+    </div>
+
+  </div>
+
+  <script src="agendamento.js"></script>
+
+</body>
+</html>
