@@ -3,16 +3,41 @@
 <head>
 
   <meta charset="UTF-8">
+
   <meta name="viewport"
   content="width=device-width, initial-scale=1.0">
 
   <title>Painel do Cliente</title>
 
+  <link rel="stylesheet" href="auth.css">
+
 </head>
 
 <body>
 
-  <h1 id="nomeUsuario"></h1>
+  <div class="container">
+
+    <div class="card">
+
+      <h1>
+        Meus Agendamentos
+      </h1>
+
+      <br>
+
+      <a
+      href="agendamento.html"
+      class="btnNovo">
+
+        + Novo Agendamento
+
+      </a>
+
+      <div id="lista"></div>
+
+    </div>
+
+  </div>
 
   <script>
 
@@ -26,10 +51,61 @@
 
     }
 
-    document.getElementById(
-      "nomeUsuario"
-    ).innerHTML =
-    "Bem-vindo, " + usuario.nome;
+    async function carregar(){
+
+      const url =
+      "SUA_URL_APPS_SCRIPT"
+      + "?acao=agendamentos"
+      + "&cpf=" + usuario.cpf;
+
+      const resposta =
+      await fetch(url);
+
+      const dados =
+      await resposta.json();
+
+      const lista =
+      document.getElementById("lista");
+
+      if(dados.length == 0){
+
+        lista.innerHTML = `
+          <p style="margin-top:30px;">
+            Nenhum agendamento encontrado.
+          </p>
+        `;
+
+        return;
+
+      }
+
+      dados.forEach(item => {
+
+        lista.innerHTML += `
+
+          <div class="agendamento">
+
+            <h3>${item.servico}</h3>
+
+            <p>
+              <b>Status:</b>
+              ${item.status}
+            </p>
+
+            <p>
+              <b>Observações:</b>
+              ${item.observacoes}
+            </p>
+
+          </div>
+
+        `;
+
+      });
+
+    }
+
+    carregar();
 
   </script>
 
