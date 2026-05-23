@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Login - REFRITEC</title>
+
+  <link rel="stylesheet" href="auth.css">
+
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <header>
+
+  <div class="logo">
+    <a href="index.html">
+        <img src="img/logo.png" alt="REFRITEC">
+    </a>
+
+
+  </div>
+
+  <nav>
+
+    <a href="login.html">
+      <i class="fa-regular fa-user"></i>
+      Minha Conta
+    </a>
+
+    <a href="#">
+      <i class="fa-solid fa-screwdriver-wrench"></i>
+      Serviços
+    </a>
+
+    <a href="#">
+      <i class="fa-solid fa-phone"></i>
+      Contato
+    </a>
+
+  </nav>
+
+</header>
+
+  <div class="container">
+
+    <div class="card">
+
+      <h1>Área do Cliente</h1>
+
+      <form id="loginForm">
+
+        <div class="input-group">
+          <i class="fa-solid fa-id-card"></i>
+          <input type="text"
+          id="cpfLogin"
+          placeholder="CPF / CNPJ"
+          required>
+        </div>
+
+        <div class="input-group">
+          <i class="fa-solid fa-lock"></i>
+          <input type="password"
+          id="senhaLogin"
+          placeholder="Senha"
+          required>
+        </div>
+
+        <button type="submit">
+
+          <i class="fa-solid fa-right-to-bracket"></i>
+
+          ENTRAR
+
+        </button>
+
+      </form>
+
+      <div class="link">
+
+        Não possui conta?
+
+        <a href="cadastro.html">
+          Criar Conta
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="login.js"></script>
+
+</body>
+</html>
