@@ -346,3 +346,67 @@ textarea{
   }
 
 }
+
+/* ================= MENU MOBILE ================= */
+
+.menu-mobile{
+
+  display:none;
+
+  font-size:32px;
+
+  color:white;
+
+  cursor:pointer;
+}
+
+/* ================================================= */
+/* ================= RESPONSIVO ==================== */
+/* ================================================= */
+
+@media(max-width:768px){
+
+  header{
+
+    height:auto;
+
+    flex-wrap:wrap;
+
+    padding:15px 20px;
+  }
+
+  .logo img{
+    width:180px;
+  }
+
+  .menu-mobile{
+
+    display:block;
+  }
+
+  nav{
+
+    width:100%;
+
+    display:none;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:20px;
+
+    padding-top:25px;
+  }
+
+  nav.ativo{
+
+    display:flex;
+  }
+
+  nav a{
+
+    font-size:18px;
+  }
+
+}
