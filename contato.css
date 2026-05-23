@@ -193,19 +193,39 @@ footer{
 
 @media(max-width:768px){
 
+  /* HEADER */
+
   header{
+
+    width:100%;
+
+    padding:12px 10px;
+
+    display:flex;
 
     flex-direction:column;
 
-    padding:20px 15px;
+    align-items:center;
 
-    gap:20px;
+    gap:12px;
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    z-index:1000;
   }
+
+  /* LOGO */
 
   .logo img{
 
-    width:180px;
+    width:150px;
   }
+
+  /* MENU */
 
   nav{
 
@@ -217,22 +237,88 @@ footer{
 
     align-items:center;
 
-    gap:12px;
-
-    flex-wrap:nowrap;
+    gap:8px;
   }
 
   nav a{
 
-    font-size:14px;
+    font-size:12px;
 
-    padding:10px 12px;
+    padding:8px 10px;
 
-    border-radius:10px;
+    border-radius:8px;
 
     background:rgba(255,255,255,0.1);
+  }
 
-    text-align:center;
+  /* TÍTULO */
+
+  .titulo{
+
+    padding-top:150px;
+
+    padding-left:15px;
+    padding-right:15px;
+
+    margin-bottom:30px;
+  }
+
+  .titulo h1{
+
+    font-size:32px;
+
+    line-height:1.2;
+  }
+
+  .titulo p{
+
+    font-size:16px;
+
+    line-height:1.5;
+  }
+
+  /* GRID */
+
+  .servicos-grid{
+
+    grid-template-columns:1fr;
+
+    padding:0 15px 40px;
+
+    gap:20px;
+  }
+
+  /* CARDS */
+
+  .card-servico{
+
+    height:260px;
+  }
+
+  .overlay{
+
+    padding:18px;
+  }
+
+  .overlay h2{
+
+    font-size:22px;
+  }
+
+  .overlay p{
+
+    font-size:14px;
+
+    line-height:1.4;
+  }
+
+  .overlay button{
+
+    width:100%;
+
+    padding:14px;
+
+    font-size:15px;
   }
 
 }
