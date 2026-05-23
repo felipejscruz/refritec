@@ -220,226 +220,65 @@ footer{
   margin-top:40px;
 }
 
-/* ================================================= */
-/* ================= RESPONSIVO ==================== */
-/* ================================================= */
+/* ================= HEADER ================= */
 
-@media(max-width:900px){
+header{
 
-  header{
+  width:100%;
 
-    height:auto;
+  background:#00116d;
 
-    flex-direction:column;
+  display:flex;
 
-    padding:20px;
+  justify-content:space-between;
 
-    gap:20px;
-  }
+  align-items:center;
 
-  .logo img{
-    width:220px;
-  }
+  padding:15px 25px;
 
-  nav{
+  position:fixed;
 
-    width:100%;
+  top:0;
 
-    justify-content:center;
+  left:0;
 
-    flex-wrap:wrap;
-
-    gap:20px;
-  }
-
-  nav a{
-    font-size:16px;
-  }
-
-  .titulo{
-
-    padding-top:230px;
-
-    padding-left:20px;
-    padding-right:20px;
-  }
-
-  .titulo h1{
-    font-size:38px;
-  }
-
-  .titulo p{
-    font-size:18px;
-  }
-
-  .servicos-grid{
-
-    grid-template-columns:1fr;
-
-    padding:0 20px 50px;
-  }
-
-  .card-servico{
-    height:360px;
-  }
-
+  z-index:1000;
 }
 
-/* ================= CELULAR ================= */
+/* LOGO */
 
-@media(max-width:500px){
+.logo img{
 
-  header{
-    padding:15px;
-  }
-
-  .logo img{
-    width:180px;
-  }
-
-  nav{
-
-    flex-direction:column;
-
-    gap:15px;
-  }
-
-  nav a{
-    font-size:15px;
-  }
-
-  .titulo{
-
-    padding-top:260px;
-
-    margin-bottom:35px;
-  }
-
-  .titulo h1{
-    font-size:30px;
-  }
-
-  .titulo p{
-
-    font-size:16px;
-
-    line-height:1.5;
-  }
-
-  .servicos-grid{
-
-    padding:0 15px 40px;
-
-    gap:20px;
-  }
-
-  .card-servico{
-
-    height:300px;
-
-    border-radius:20px;
-  }
-
-  .overlay{
-
-    padding:20px;
-  }
-
-  .overlay h2{
-
-    font-size:24px;
-
-    margin-bottom:10px;
-  }
-
-  .overlay p{
-
-    font-size:15px;
-
-    line-height:1.4;
-
-    margin-bottom:18px;
-  }
-
-  .overlay button{
-
-    width:100%;
-
-    padding:14px;
-
-    font-size:16px;
-  }
-
-  footer{
-    font-size:14px;
-  }
-
+  width:220px;
 }
 
-/* ================= MENU MOBILE ================= */
+/* MENU DESKTOP */
 
-.menu-mobile{
+nav{
 
-  display:none;
+  display:flex;
 
-  font-size:32px;
+  align-items:center;
+
+  gap:35px;
+}
+
+nav a{
 
   color:white;
 
-  cursor:pointer;
+  text-decoration:none;
+
+  font-size:18px;
+
+  display:flex;
+
+  align-items:center;
+
+  gap:10px;
 }
 
-/* ================================================= */
-/* ================= RESPONSIVO ==================== */
-/* ================================================= */
-
-@media(max-width:768px){
-
-  header{
-
-    height:auto;
-
-    flex-wrap:wrap;
-
-    padding:15px 20px;
-  }
-
-  .logo img{
-    width:180px;
-  }
-
-  .menu-mobile{
-
-    display:block;
-  }
-
-  nav{
-
-    width:100%;
-
-    display:none;
-
-    flex-direction:column;
-
-    align-items:center;
-
-    gap:20px;
-
-    padding-top:25px;
-  }
-
-  nav.ativo{
-
-    display:flex;
-  }
-
-  nav a{
-
-    font-size:18px;
-  }
-
-}
-/* ================= MENU MOBILE ================= */
+/* BOTÃO MOBILE */
 
 .menu-mobile{
 
@@ -453,30 +292,10 @@ footer{
 }
 
 /* ================================================= */
-/* ================= RESPONSIVO ==================== */
+/* ================= CELULAR ======================= */
 /* ================================================= */
 
 @media(max-width:768px){
-
-  header{
-
-    height:auto;
-
-    padding:15px 20px;
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-    flex-wrap:wrap;
-  }
-
-  .logo img{
-
-    width:170px;
-  }
 
   /* BOTÃO HAMBURGUER */
 
@@ -485,7 +304,7 @@ footer{
     display:block;
   }
 
-  /* MENU */
+  /* MENU ESCONDIDO */
 
   nav{
 
@@ -499,8 +318,10 @@ footer{
 
     gap:20px;
 
-    padding-top:25px;
+    padding:25px 0;
   }
+
+  /* MENU ABERTO */
 
   nav.ativo{
 
@@ -508,6 +329,10 @@ footer{
   }
 
   nav a{
+
+    width:100%;
+
+    justify-content:center;
 
     font-size:18px;
   }
