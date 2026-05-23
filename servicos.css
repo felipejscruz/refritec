@@ -18,7 +18,7 @@ header{
   width:100%;
   height:110px;
 
-  background:#000061;
+  background:#00116d;
 
   display:flex;
   justify-content:space-between;
@@ -120,23 +120,23 @@ nav a{
 /* IMAGENS */
 
 .freezer{
-  background-image:url('freezer.png');
+  background-image:url('https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?q=80&w=1974&auto=format&fit=crop');
 }
 
 .ar{
-  background-image:url('ar.png');
+  background-image:url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=1974&auto=format&fit=crop');
 }
 
 .limpeza{
-  background-image:url('limpeza.png');
+  background-image:url('https://images.unsplash.com/photo-1621905252507-b35492cc74b4?q=80&w=1974&auto=format&fit=crop');
 }
 
 .geladeira{
-  background-image:url('geladeira.png');
+  background-image:url('https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?q=80&w=1974&auto=format&fit=crop');
 }
 
 .camara{
-  background-image:url('camara.png');
+  background-image:url('https://images.unsplash.com/photo-1563453392212-326f5e854473?q=80&w=1974&auto=format&fit=crop');
 }
 
 /* OVERLAY */
@@ -220,138 +220,54 @@ footer{
   margin-top:40px;
 }
 
-/* ================================================= */
-/* ================= RESPONSIVO ==================== */
-/* ================================================= */
+/* RESPONSIVO */
 
-@media(max-width:768px){
-
-  /* HEADER */
+@media(max-width:900px){
 
   header{
 
-    width:100%;
-
-    padding:12px 10px;
-
-    display:flex;
+    height:auto;
 
     flex-direction:column;
 
-    align-items:center;
-
-    gap:12px;
-
-    position:fixed;
-
-    top:0;
-
-    left:0;
-
-    z-index:1000;
-  }
-
-  /* LOGO */
-
-  .logo img{
-
-    width:150px;
-  }
-
-  /* MENU */
-
-  nav{
-
-    width:100%;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    gap:8px;
-  }
-
-  nav a{
-
-    font-size:12px;
-
-    padding:8px 10px;
-
-    border-radius:8px;
-
-    background:rgba(255,255,255,0.1);
-  }
-
-  /* TÍTULO */
-
-  .titulo{
-
-    padding-top:150px;
-
-    padding-left:15px;
-    padding-right:15px;
-
-    margin-bottom:30px;
-  }
-
-  .titulo h1{
-
-    font-size:32px;
-
-    line-height:1.2;
-  }
-
-  .titulo p{
-
-    font-size:16px;
-
-    line-height:1.5;
-  }
-
-  /* GRID */
-
-  .servicos-grid{
-
-    grid-template-columns:1fr;
-
-    padding:0 15px 40px;
+    padding:20px;
 
     gap:20px;
   }
 
-  /* CARDS */
+  nav{
 
-  .card-servico{
+    flex-wrap:wrap;
 
-    height:260px;
+    justify-content:center;
   }
 
-  .overlay{
+  .titulo{
+    padding-top:220px;
+  }
 
-    padding:18px;
+  .titulo h1{
+    font-size:38px;
+  }
+
+  .titulo p{
+    font-size:18px;
+  }
+
+}
+
+@media(max-width:500px){
+
+  .servicos-grid{
+    padding:0 20px 40px;
   }
 
   .overlay h2{
-
-    font-size:22px;
+    font-size:26px;
   }
 
   .overlay p{
-
-    font-size:14px;
-
-    line-height:1.4;
-  }
-
-  .overlay button{
-
-    width:100%;
-
-    padding:14px;
-
-    font-size:15px;
+    font-size:16px;
   }
 
 }
