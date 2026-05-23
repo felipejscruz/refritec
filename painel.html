@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport"
+  content="width=device-width, initial-scale=1.0">
+
+  <title>Painel do Cliente</title>
+
+</head>
+
+<body>
+
+  <h1 id="nomeUsuario"></h1>
+
+  <script>
+
+    const usuario =
+    JSON.parse(localStorage.getItem("usuario"));
+
+    if(!usuario){
+
+      window.location.href =
+      "login.html";
+
+    }
+
+    document.getElementById(
+      "nomeUsuario"
+    ).innerHTML =
+    "Bem-vindo, " + usuario.nome;
+
+  </script>
+
+</body>
+</html>
