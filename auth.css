@@ -1,5 +1,3 @@
-/* ================= RESET ================= */
-
 *{
   margin:0;
   padding:0;
@@ -8,74 +6,14 @@
 }
 
 body{
-  overflow-x:hidden;
-  background:#f5f7fb;
-}
-
-/* ================= HEADER ================= */
-
-header{
 
   width:100%;
-  height:110px;
-
-  background:#000061;
-
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-
-  padding:0 60px;
-
-  position:fixed;
-  top:0;
-  left:0;
-
-  z-index:1000;
-}
-
-.logo img{
-  width:260px;
-}
-
-/* ================= MENU ================= */
-
-nav{
-  display:flex;
-  align-items:center;
-  gap:45px;
-}
-
-nav a{
-
-  color:white;
-
-  text-decoration:none;
-
-  font-size:19px;
-
-  display:flex;
-  align-items:center;
-  gap:10px;
-
-  transition:0.3s;
-}
-
-nav a:hover{
-  color:#42c2ff;
-}
-
-/* ================= CONTAINER ================= */
-
-.container{
-
-  width:100%;
-  min-height:100vh;
+  height:100vh;
 
   background:
   linear-gradient(rgba(0,0,0,0.65),
   rgba(0,0,0,0.65)),
-  url('ar-condicionado.png');
+  url('img/ar-condicionado.jpg');
 
   background-size:cover;
   background-position:center;
@@ -84,10 +22,15 @@ nav a:hover{
   justify-content:center;
   align-items:center;
 
-  padding:150px 20px 40px;
+  padding:20px;
 }
 
-/* ================= CARD ================= */
+.container{
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
 
 .card{
 
@@ -105,21 +48,15 @@ nav a:hover{
   text-align:center;
 }
 
-.card-logo{
+.logo{
   width:220px;
   margin-bottom:20px;
 }
 
 .card h1{
-
   color:#00116d;
-
   margin-bottom:30px;
-
-  font-size:34px;
 }
-
-/* ================= INPUTS ================= */
 
 .input-group{
 
@@ -127,7 +64,7 @@ nav a:hover{
 
   background:#f1f1f1;
 
-  border-radius:14px;
+  border-radius:12px;
 
   margin-bottom:18px;
 
@@ -138,9 +75,7 @@ nav a:hover{
 }
 
 .input-group i{
-
   color:#00116d;
-
   font-size:18px;
 }
 
@@ -158,8 +93,6 @@ nav a:hover{
   font-size:16px;
 }
 
-/* ================= BOTÃO ================= */
-
 button{
 
   width:100%;
@@ -172,7 +105,7 @@ button{
 
   padding:18px;
 
-  border-radius:14px;
+  border-radius:12px;
 
   font-size:18px;
   font-weight:bold;
@@ -186,15 +119,11 @@ button:hover{
   transform:scale(1.03);
 }
 
-/* ================= LINKS ================= */
-
 .link{
 
   margin-top:25px;
 
   font-size:15px;
-
-  color:#444;
 }
 
 .link a{
@@ -206,210 +135,16 @@ button:hover{
   font-weight:bold;
 }
 
-/* ================= FOOTER ================= */
+/* RESPONSIVO */
 
-footer{
+@media(max-width:500px){
 
-  background:#000061;
-
-  color:white;
-
-  text-align:center;
-
-  padding:22px;
-
-  font-size:18px;
-}
-
-/* ================= nova agendamento ================= */
-.btnNovo{
-
-  display:inline-block;
-
-  background:#0077ff;
-
-  color:white;
-
-  padding:15px 25px;
-
-  border-radius:12px;
-
-  text-decoration:none;
-
-  font-weight:bold;
-
-  margin-bottom:30px;
-}
-
-.agendamento{
-
-  width:100%;
-
-  background:#f3f3f3;
-
-  padding:20px;
-
-  border-radius:15px;
-
-  margin-top:20px;
-
-  text-align:left;
-}
-
-.agendamento h3{
-
-  color:#00116d;
-
-  margin-bottom:10px;
-}
-
-select,
-textarea{
-
-  width:100%;
-
-  border:none;
-
-  outline:none;
-
-  background:none;
-
-  padding:18px;
-
-  font-size:16px;
-}
-/* ================================================= */
-/* ================= RESPONSIVO ==================== */
-/* ================================================= */
-
-@media(max-width:768px){
-
-  /* HEADER */
-
-  header{
-
-    width:100%;
-
-    padding:12px 10px;
-
-    display:flex;
-
-    flex-direction:column;
-
-    align-items:center;
-
-    gap:12px;
-
-    position:fixed;
-
-    top:0;
-
-    left:0;
-
-    z-index:1000;
+  .card{
+    padding:30px 20px;
   }
 
-  /* LOGO */
-
-  .logo img{
-
-    width:150px;
-  }
-
-  /* MENU */
-
-  nav{
-
-    width:100%;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    gap:8px;
-  }
-
-  nav a{
-
-    font-size:12px;
-
-    padding:8px 10px;
-
-    border-radius:8px;
-
-    background:rgba(255,255,255,0.1);
-  }
-
-  /* TÍTULO */
-
-  .titulo{
-
-    padding-top:150px;
-
-    padding-left:15px;
-    padding-right:15px;
-
-    margin-bottom:30px;
-  }
-
-  .titulo h1{
-
-    font-size:32px;
-
-    line-height:1.2;
-  }
-
-  .titulo p{
-
-    font-size:16px;
-
-    line-height:1.5;
-  }
-
-  /* GRID */
-
-  .servicos-grid{
-
-    grid-template-columns:1fr;
-
-    padding:0 15px 40px;
-
-    gap:20px;
-  }
-
-  /* CARDS */
-
-  .card-servico{
-
-    height:260px;
-  }
-
-  .overlay{
-
-    padding:18px;
-  }
-
-  .overlay h2{
-
-    font-size:22px;
-  }
-
-  .overlay p{
-
-    font-size:14px;
-
-    line-height:1.4;
-  }
-
-  .overlay button{
-
-    width:100%;
-
-    padding:14px;
-
-    font-size:15px;
+  .logo{
+    width:170px;
   }
 
 }
