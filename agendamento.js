@@ -32,7 +32,7 @@ form.addEventListener("submit", async (e)=>{
   };
 
   const url =
-  "SUA_URL_APPS_SCRIPT";
+  "https://script.google.com/macros/s/AKfycbyN3es_E3iqB2eNCI6Sol6G-i54cAricV6dgUR0nGjZiyZ6D0GFyQfaidG2fZUY6G5ixA/exec";
 
   await fetch(url,{
 
