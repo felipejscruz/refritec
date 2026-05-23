@@ -1,0 +1,274 @@
+/* ================= RESET ================= */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  background:#f5f7fb;
+  overflow-x:hidden;
+}
+
+/* ================= HEADER ================= */
+
+header{
+
+  width:100%;
+  height:110px;
+
+  background:#00116d;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  padding:0 60px;
+
+  position:fixed;
+
+  top:0;
+
+  z-index:1000;
+}
+
+.logo img{
+  width:260px;
+}
+
+/* ================= MENU ================= */
+
+nav{
+  display:flex;
+  gap:40px;
+}
+
+nav a{
+
+  color:white;
+
+  text-decoration:none;
+
+  font-size:18px;
+
+  display:flex;
+  align-items:center;
+  gap:10px;
+
+  transition:0.3s;
+}
+
+nav a:hover{
+  color:#42c2ff;
+}
+
+/* ================= CONTAINER ================= */
+
+.contato-container{
+
+  width:100%;
+
+  min-height:100vh;
+
+  padding:170px 60px 60px;
+
+  display:grid;
+
+  grid-template-columns:1fr 1fr;
+
+  gap:40px;
+}
+
+/* ================= INFO ================= */
+
+.info-contato{
+
+  background:white;
+
+  padding:45px;
+
+  border-radius:25px;
+
+  box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+
+.info-contato h1{
+
+  font-size:46px;
+
+  color:#00116d;
+
+  margin-bottom:20px;
+}
+
+.info-contato p{
+
+  font-size:18px;
+
+  color:#555;
+
+  line-height:1.6;
+
+  margin-bottom:35px;
+}
+
+/* ================= ITENS ================= */
+
+.item{
+
+  display:flex;
+
+  align-items:flex-start;
+
+  gap:18px;
+
+  margin-bottom:30px;
+}
+
+.item i{
+
+  font-size:24px;
+
+  color:#0077ff;
+
+  margin-top:3px;
+}
+
+.item span{
+
+  font-size:18px;
+
+  color:#333;
+
+  line-height:1.5;
+}
+
+/* ================= MAPA ================= */
+
+.mapa{
+
+  width:100%;
+
+  height:100%;
+
+  min-height:500px;
+
+  border-radius:25px;
+
+  overflow:hidden;
+
+  box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+
+.mapa iframe{
+
+  width:100%;
+  height:100%;
+
+  border:none;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+
+  background:#00116d;
+
+  color:white;
+
+  text-align:center;
+
+  padding:25px;
+
+  font-size:16px;
+}
+
+/* ================================================= */
+/* ================= RESPONSIVO ==================== */
+/* ================================================= */
+
+@media(max-width:900px){
+
+  header{
+
+    height:auto;
+
+    flex-direction:column;
+
+    padding:20px;
+
+    gap:20px;
+  }
+
+  .logo img{
+    width:220px;
+  }
+
+  nav{
+
+    width:100%;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:20px;
+  }
+
+  nav a{
+    font-size:16px;
+  }
+
+  .contato-container{
+
+    grid-template-columns:1fr;
+
+    padding:240px 20px 50px;
+  }
+
+}
+
+/* ================= CELULAR ================= */
+
+@media(max-width:500px){
+
+  nav{
+
+    flex-direction:column;
+
+    gap:15px;
+  }
+
+  .contato-container{
+
+    padding-top:270px;
+  }
+
+  .info-contato{
+
+    padding:30px 20px;
+  }
+
+  .info-contato h1{
+
+    font-size:32px;
+  }
+
+  .info-contato p{
+
+    font-size:16px;
+  }
+
+  .item span{
+
+    font-size:16px;
+  }
+
+  .mapa{
+
+    min-height:350px;
+  }
+
+}
