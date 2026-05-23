@@ -153,164 +153,65 @@ footer{
   font-size:20px;
 }
 
-/* ================================================= */
-/* ================= RESPONSIVO ==================== */
-/* ================================================= */
+/* ================= HEADER ================= */
 
-@media(max-width:900px){
+header{
 
-  header{
+  width:100%;
 
-    height:auto;
+  background:#00116d;
 
-    flex-direction:column;
+  display:flex;
 
-    padding:20px;
+  justify-content:space-between;
 
-    gap:20px;
-  }
+  align-items:center;
 
-  .logo img{
-    width:220px;
-  }
+  padding:15px 25px;
 
-  nav{
+  position:fixed;
 
-    width:100%;
+  top:0;
 
-    justify-content:center;
+  left:0;
 
-    flex-wrap:wrap;
-
-    gap:20px;
-  }
-
-  nav a{
-    font-size:16px;
-  }
-
-  .hero{
-    padding-top:220px;
-  }
-
-  .hero h1{
-    font-size:38px;
-  }
-
-  .hero p{
-    font-size:20px;
-  }
-
-  .btn-agendar{
-
-    font-size:20px;
-
-    padding:18px 30px;
-  }
-
-  .seguranca{
-    font-size:16px;
-  }
-
-  footer{
-    font-size:16px;
-  }
-
+  z-index:1000;
 }
 
-/* ================= CELULARES ================= */
+/* LOGO */
 
-@media(max-width:500px){
+.logo img{
 
-  .hero h1{
-    font-size:30px;
-  }
-
-  .hero p{
-    font-size:17px;
-  }
-
-  .btn-agendar{
-
-    width:100%;
-
-    justify-content:center;
-
-    font-size:18px;
-
-    padding:16px;
-  }
-
-  nav{
-    flex-direction:column;
-    align-items:center;
-  }
-
+  width:220px;
 }
-/* ================= MENU MOBILE ================= */
 
-.menu-mobile{
+/* MENU DESKTOP */
 
-  display:none;
+nav{
 
-  font-size:32px;
+  display:flex;
+
+  align-items:center;
+
+  gap:35px;
+}
+
+nav a{
 
   color:white;
 
-  cursor:pointer;
+  text-decoration:none;
+
+  font-size:18px;
+
+  display:flex;
+
+  align-items:center;
+
+  gap:10px;
 }
 
-/* ================================================= */
-/* ================= RESPONSIVO ==================== */
-/* ================================================= */
-
-@media(max-width:768px){
-
-  header{
-
-    height:auto;
-
-    flex-wrap:wrap;
-
-    padding:15px 20px;
-  }
-
-  .logo img{
-    width:180px;
-  }
-
-  .menu-mobile{
-
-    display:block;
-  }
-
-  nav{
-
-    width:100%;
-
-    display:none;
-
-    flex-direction:column;
-
-    align-items:center;
-
-    gap:20px;
-
-    padding-top:25px;
-  }
-
-  nav.ativo{
-
-    display:flex;
-  }
-
-  nav a{
-
-    font-size:18px;
-  }
-
-}
-/* ================= MENU MOBILE ================= */
+/* BOTÃO MOBILE */
 
 .menu-mobile{
 
@@ -324,30 +225,10 @@ footer{
 }
 
 /* ================================================= */
-/* ================= RESPONSIVO ==================== */
+/* ================= CELULAR ======================= */
 /* ================================================= */
 
 @media(max-width:768px){
-
-  header{
-
-    height:auto;
-
-    padding:15px 20px;
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-    flex-wrap:wrap;
-  }
-
-  .logo img{
-
-    width:170px;
-  }
 
   /* BOTÃO HAMBURGUER */
 
@@ -356,7 +237,7 @@ footer{
     display:block;
   }
 
-  /* MENU */
+  /* MENU ESCONDIDO */
 
   nav{
 
@@ -370,8 +251,10 @@ footer{
 
     gap:20px;
 
-    padding-top:25px;
+    padding:25px 0;
   }
+
+  /* MENU ABERTO */
 
   nav.ativo{
 
@@ -379,6 +262,10 @@ footer{
   }
 
   nav a{
+
+    width:100%;
+
+    justify-content:center;
 
     font-size:18px;
   }
