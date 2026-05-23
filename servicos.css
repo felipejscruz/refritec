@@ -220,7 +220,9 @@ footer{
   margin-top:40px;
 }
 
-/* RESPONSIVO */
+/* ================================================= */
+/* ================= RESPONSIVO ==================== */
+/* ================================================= */
 
 @media(max-width:900px){
 
@@ -235,15 +237,31 @@ footer{
     gap:20px;
   }
 
+  .logo img{
+    width:220px;
+  }
+
   nav{
+
+    width:100%;
+
+    justify-content:center;
 
     flex-wrap:wrap;
 
-    justify-content:center;
+    gap:20px;
+  }
+
+  nav a{
+    font-size:16px;
   }
 
   .titulo{
-    padding-top:220px;
+
+    padding-top:230px;
+
+    padding-left:20px;
+    padding-right:20px;
   }
 
   .titulo h1{
@@ -254,20 +272,106 @@ footer{
     font-size:18px;
   }
 
+  .servicos-grid{
+
+    grid-template-columns:1fr;
+
+    padding:0 20px 50px;
+  }
+
+  .card-servico{
+    height:360px;
+  }
+
 }
+
+/* ================= CELULAR ================= */
 
 @media(max-width:500px){
 
+  header{
+    padding:15px;
+  }
+
+  .logo img{
+    width:180px;
+  }
+
+  nav{
+
+    flex-direction:column;
+
+    gap:15px;
+  }
+
+  nav a{
+    font-size:15px;
+  }
+
+  .titulo{
+
+    padding-top:260px;
+
+    margin-bottom:35px;
+  }
+
+  .titulo h1{
+    font-size:30px;
+  }
+
+  .titulo p{
+
+    font-size:16px;
+
+    line-height:1.5;
+  }
+
   .servicos-grid{
-    padding:0 20px 40px;
+
+    padding:0 15px 40px;
+
+    gap:20px;
+  }
+
+  .card-servico{
+
+    height:300px;
+
+    border-radius:20px;
+  }
+
+  .overlay{
+
+    padding:20px;
   }
 
   .overlay h2{
-    font-size:26px;
+
+    font-size:24px;
+
+    margin-bottom:10px;
   }
 
   .overlay p{
+
+    font-size:15px;
+
+    line-height:1.4;
+
+    margin-bottom:18px;
+  }
+
+  .overlay button{
+
+    width:100%;
+
+    padding:14px;
+
     font-size:16px;
+  }
+
+  footer{
+    font-size:14px;
   }
 
 }
