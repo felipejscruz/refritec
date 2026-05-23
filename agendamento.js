@@ -26,6 +26,9 @@ form.addEventListener("submit", async (e)=>{
     servico:
     document.getElementById("servico").value,
 
+    data:
+    document.getElementById("dataAgendamento").value,
+
     observacoes:
     document.getElementById("observacoes").value
 
