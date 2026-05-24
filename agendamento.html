@@ -90,9 +90,14 @@
 
         <div class="input-group">
 
+        
+
           <input
-          type="dateagendamento"
-           id="dataAgendamento"
+          type="text"
+          id="dataAgendamento"
+          placeholder="Data do agendamento"
+          onfocus="(this.type='date')"
+          onblur="if(!this.value)this.type='text'"
           required>
 
         </div>
