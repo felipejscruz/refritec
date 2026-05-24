@@ -158,6 +158,50 @@ nav a:hover{
   font-size:16px;
 }
 
+/* ================= INPUT DATE ================= */
+
+input[type="date"]{
+
+  width:100%;
+
+  border:none;
+
+  outline:none;
+
+  background:none;
+
+  font-size:15px;
+
+  color:#555;
+}
+
+/* TEXTO DO DATE */
+
+input[type="date"]::before{
+
+  content:"Data de nascimento/criação";
+
+  color:#777;
+
+  margin-right:10px;
+}
+
+/* QUANDO SELECIONAR DATA */
+
+input[type="date"]:valid::before{
+
+  display:none;
+}
+
+/* ÍCONE CALENDÁRIO */
+
+input[type="date"]::-webkit-calendar-picker-indicator{
+
+  cursor:pointer;
+
+  opacity:0.8;
+}
+
 /* ================= BOTÃO ================= */
 
 button{
