@@ -186,6 +186,17 @@ input[type="date"]::before{
   margin-right:10px;
 }
 
+/* TEXTO DO DATE agendamento */
+
+input[type="dateagendamento"]::before{
+
+  content:"";
+
+  color:#777;
+
+  margin-right:10px;
+}
+
 /* QUANDO SELECIONAR DATA */
 
 input[type="date"]:valid::before{
