@@ -12,6 +12,12 @@ form.addEventListener("submit", async (e)=>{
 
     cpf:
     document.getElementById("cpf").value,
+    
+    dataNascimento:
+    document.getElementById("dataNascimento").value,
+
+    endereco:
+    document.getElementById("endereco").value,
 
     email:
     document.getElementById("email").value,
