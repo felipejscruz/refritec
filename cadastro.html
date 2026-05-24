@@ -83,8 +83,11 @@
           <i class="fa-solid fa-calendar-days"></i>
 
           <input
-          type="date"
+          type="text"
           id="dataNascimento"
+          placeholder="Data de nascimento/criação"
+          onfocus="(this.type='date')"
+          onblur="if(!this.value)this.type='text'"
           required>
 
         </div>
