@@ -284,28 +284,6 @@ footer{
   margin-bottom:30px;
 }
 
-.agendamento{
-
-  width:100%;
-
-  background:#f3f3f3;
-
-  padding:20px;
-
-  border-radius:15px;
-
-  margin-top:20px;
-
-  text-align:left;
-}
-
-.agendamento h3{
-
-  color:#00116d;
-
-  margin-bottom:10px;
-}
-
 select,
 textarea{
 
@@ -388,60 +366,4 @@ textarea{
     font-size:15px;
   }
 
-}
-
-/* ================================================= */
-/* =========== DATA APENAS AGENDAMENTO ============= */
-/* ================================================= */
-
-.grupo-data-agendamento{
-
-  position:relative;
-}
-
-/* INPUT */
-
-.data-agendamento{
-
-  width:100%;
-
-  border:none;
-
-  outline:none;
-
-  background:none;
-
-  font-size:15px;
-
-  color:#555;
-}
-
-/* ESCONDE dd/mm/aaaa */
-
-.data-agendamento:invalid{
-
-  color:transparent;
-}
-
-/* PLACEHOLDER */
-
-.placeholder-agendamento{
-
-  position:absolute;
-
-  left:45px;
-
-  color:#777;
-
-  font-size:15px;
-
-  pointer-events:none;
-}
-
-/* SOME AO ESCOLHER DATA */
-
-.data-agendamento:valid
-+ .placeholder-agendamento{
-
-  display:none;
 }
