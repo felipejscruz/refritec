@@ -389,3 +389,20 @@ textarea{
   }
 
 }
+
+/* DATA AGENDAMENTO */
+
+.data-agendamento{
+
+  width:100%;
+
+  border:none;
+
+  outline:none;
+
+  background:none;
+
+  font-size:15px;
+
+  color:#555;
+}
