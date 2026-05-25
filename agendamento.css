@@ -1,1 +1,447 @@
+/* ================= RESET ================= */
 
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  overflow-x:hidden;
+  background:#f5f7fb;
+}
+
+/* ================= HEADER ================= */
+
+header{
+
+  width:100%;
+  height:110px;
+
+  background:#000061;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  padding:0 60px;
+
+  position:fixed;
+  top:0;
+  left:0;
+
+  z-index:1000;
+}
+
+.logo img{
+  width:260px;
+}
+
+/* ================= MENU ================= */
+
+nav{
+  display:flex;
+  align-items:center;
+  gap:45px;
+}
+
+nav a{
+
+  color:white;
+
+  text-decoration:none;
+
+  font-size:19px;
+
+  display:flex;
+  align-items:center;
+  gap:10px;
+
+  transition:0.3s;
+}
+
+nav a:hover{
+  color:#42c2ff;
+}
+
+/* ================= CONTAINER ================= */
+
+.container{
+
+  width:100%;
+  min-height:100vh;
+
+  background:
+  linear-gradient(rgba(0,0,0,0.65),
+  rgba(0,0,0,0.65)),
+  url('fundo.png');
+
+  background-size:cover;
+  background-position:center;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  padding:150px 20px 40px;
+}
+
+/* ================= CARD ================= */
+
+.card{
+
+  width:100%;
+  max-width:450px;
+
+  background:white;
+
+  border-radius:25px;
+
+  padding:40px;
+
+  box-shadow:0 10px 35px rgba(0,0,0,0.35);
+
+  text-align:center;
+}
+
+.card-logo{
+  width:220px;
+  margin-bottom:20px;
+}
+
+.card h1{
+
+  color:#00116d;
+
+  margin-bottom:30px;
+
+  font-size:34px;
+}
+
+/* ================= INPUTS ================= */
+
+.input-group{
+
+  width:100%;
+
+  background:#f1f1f1;
+
+  border-radius:14px;
+
+  margin-bottom:18px;
+
+  display:flex;
+  align-items:center;
+
+  padding:0 15px;
+}
+
+.input-group i{
+
+  color:#00116d;
+
+  font-size:18px;
+}
+
+.input-group input{
+
+  width:100%;
+
+  border:none;
+  outline:none;
+
+  background:none;
+
+  padding:18px 15px;
+
+  font-size:16px;
+}
+
+/* ================= INPUT DATE ================= */
+
+input[type="date"]{
+
+  width:100%;
+
+  border:none;
+
+  outline:none;
+
+  background:none;
+
+  font-size:15px;
+
+  color:#555;
+}
+
+/* TEXTO DO DATE */
+
+input[type="date"]::before{
+
+  content:"Data de nascimento/criação";
+
+  color:#777;
+
+  margin-right:10px;
+}
+
+/* QUANDO SELECIONAR DATA */
+
+input[type="date"]:valid::before{
+
+  display:none;
+}
+
+/* ÍCONE CALENDÁRIO */
+
+input[type="date"]::-webkit-calendar-picker-indicator{
+
+  cursor:pointer;
+
+  opacity:0.8;
+}
+
+/* ================= BOTÃO ================= */
+
+button{
+
+  width:100%;
+
+  border:none;
+
+  background:linear-gradient(90deg,#0066ff,#00a2ff);
+
+  color:white;
+
+  padding:18px;
+
+  border-radius:14px;
+
+  font-size:18px;
+  font-weight:bold;
+
+  cursor:pointer;
+
+  transition:0.3s;
+}
+
+button:hover{
+  transform:scale(1.03);
+}
+
+/* ================= LINKS ================= */
+
+.link{
+
+  margin-top:25px;
+
+  font-size:15px;
+
+  color:#444;
+}
+
+.link a{
+
+  color:#0066ff;
+
+  text-decoration:none;
+
+  font-weight:bold;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+
+  background:#000061;
+
+  color:white;
+
+  text-align:center;
+
+  padding:22px;
+
+  font-size:18px;
+}
+
+.btnNovo{
+
+  display:inline-block;
+
+  background:#0077ff;
+
+  color:white;
+
+  padding:15px 25px;
+
+  border-radius:12px;
+
+  text-decoration:none;
+
+  font-weight:bold;
+
+  margin-bottom:30px;
+}
+
+.agendamento{
+
+  width:100%;
+
+  background:#f3f3f3;
+
+  padding:20px;
+
+  border-radius:15px;
+
+  margin-top:20px;
+
+  text-align:left;
+}
+
+.agendamento h3{
+
+  color:#00116d;
+
+  margin-bottom:10px;
+}
+
+select,
+textarea{
+
+  width:100%;
+
+  border:none;
+
+  outline:none;
+
+  background:none;
+
+  padding:18px;
+
+  font-size:16px;
+}
+
+/* ================================================= */
+/* ================= RESPONSIVO ==================== */
+/* ================================================= */
+
+@media(max-width:900px){
+
+  header{
+
+    height:auto;
+
+    flex-direction:column;
+
+    padding:20px;
+
+    gap:20px;
+  }
+
+  .logo img{
+    width:220px;
+  }
+
+  nav{
+
+    width:100%;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:20px;
+  }
+
+  nav a{
+    font-size:16px;
+  }
+
+  .container{
+    padding-top:220px;
+  }
+
+}
+
+/* ================= CELULAR ================= */
+
+@media(max-width:500px){
+
+  .card{
+    padding:30px 20px;
+  }
+
+  .card-logo{
+    width:170px;
+  }
+
+  .card h1{
+    font-size:28px;
+  }
+
+  nav{
+    flex-direction:column;
+  }
+
+  nav a{
+    font-size:15px;
+  }
+
+}
+
+/* ================================================= */
+/* =========== DATA APENAS AGENDAMENTO ============= */
+/* ================================================= */
+
+.grupo-data-agendamento{
+
+  position:relative;
+}
+
+/* INPUT */
+
+.data-agendamento{
+
+  width:100%;
+
+  border:none;
+
+  outline:none;
+
+  background:none;
+
+  font-size:15px;
+
+  color:#555;
+}
+
+/* ESCONDE dd/mm/aaaa */
+
+.data-agendamento:invalid{
+
+  color:transparent;
+}
+
+/* PLACEHOLDER */
+
+.placeholder-agendamento{
+
+  position:absolute;
+
+  left:45px;
+
+  color:#777;
+
+  font-size:15px;
+
+  pointer-events:none;
+}
+
+/* SOME AO ESCOLHER DATA */
+
+.data-agendamento:valid
++ .placeholder-agendamento{
+
+  display:none;
+}
