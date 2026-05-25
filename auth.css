@@ -204,6 +204,8 @@ input[type="date"]::-webkit-calendar-picker-indicator{
 
 /* ================= INPUT DATE agendamento================= */
 
+/* ================= INPUT DATE ================= */
+
 input[type="dateagendamento"]{
 
   width:100%;
@@ -219,25 +221,25 @@ input[type="dateagendamento"]{
   color:#555;
 }
 
-/* TEXTO DO DATE agendamento*/
+/* TEXTO DO DATE */
 
 input[type="dateagendamento"]::before{
 
-  content:"Data do Serviço";
+  content:"Data do Serviço/Evento";
 
   color:#777;
 
   margin-right:10px;
 }
 
-/* QUANDO SELECIONAR DATA agendamento*/
+/* QUANDO SELECIONAR DATA */
 
 input[type="dateagendamento"]:valid::before{
 
   display:none;
 }
 
-/* ÍCONE CALENDÁRIO agendamento*/
+/* ÍCONE CALENDÁRIO */
 
 input[type="dateagendamento"]::-webkit-calendar-picker-indicator{
 
