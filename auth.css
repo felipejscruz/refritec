@@ -390,7 +390,16 @@ textarea{
 
 }
 
-/* DATA AGENDAMENTO */
+/* ================================================= */
+/* =========== DATA APENAS AGENDAMENTO ============= */
+/* ================================================= */
+
+.grupo-data-agendamento{
+
+  position:relative;
+}
+
+/* INPUT */
 
 .data-agendamento{
 
@@ -405,4 +414,34 @@ textarea{
   font-size:15px;
 
   color:#555;
+}
+
+/* ESCONDE dd/mm/aaaa */
+
+.data-agendamento:invalid{
+
+  color:transparent;
+}
+
+/* PLACEHOLDER */
+
+.placeholder-agendamento{
+
+  position:absolute;
+
+  left:45px;
+
+  color:#777;
+
+  font-size:15px;
+
+  pointer-events:none;
+}
+
+/* SOME AO ESCOLHER DATA */
+
+.data-agendamento:valid
++ .placeholder-agendamento{
+
+  display:none;
 }
