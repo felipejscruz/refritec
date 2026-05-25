@@ -202,6 +202,50 @@ input[type="date"]::-webkit-calendar-picker-indicator{
   opacity:0.8;
 }
 
+/* ================= INPUT DATE agendamento================= */
+
+input[type="dateagendamento"]{
+
+  width:100%;
+
+  border:none;
+
+  outline:none;
+
+  background:none;
+
+  font-size:15px;
+
+  color:#555;
+}
+
+/* TEXTO DO DATE agendamento*/
+
+input[type="dateagendamento"]::before{
+
+  content:"Data do Serviço";
+
+  color:#777;
+
+  margin-right:10px;
+}
+
+/* QUANDO SELECIONAR DATA agendamento*/
+
+input[type="dateagendamento"]:valid::before{
+
+  display:none;
+}
+
+/* ÍCONE CALENDÁRIO agendamento*/
+
+input[type="dateagendamento"]::-webkit-calendar-picker-indicator{
+
+  cursor:pointer;
+
+  opacity:0.8;
+}
+
 /* ================= BOTÃO ================= */
 
 button{
