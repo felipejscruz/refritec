@@ -13,19 +13,17 @@ form.addEventListener("submit", async (e) => {
   const email = document.getElementById("email").value;
   const senha = document.getElementById("senha").value;
 
-  // 1️⃣ cria usuário (Auth)
   const { data: authData, error: authError } =
     await supabase.auth.signUp({
-      email: email,
+      email,
       password: senha
     });
 
-  if (authError) {
-    alert(authError.message);
+  if (authError || !authData.user) {
+    alert(authError?.message || "Erro no cadastro");
     return;
   }
 
-  // 2️⃣ salva dados extras
   const { error } = await supabase
     .from("usuarios")
     .insert({
@@ -39,8 +37,9 @@ form.addEventListener("submit", async (e) => {
     });
 
   if (error) {
-    alert("Erro ao salvar dados");
+    alert(error.message);
   } else {
     alert("Cadastro realizado com sucesso!");
+    window.location.href = "login.html";
   }
 });
