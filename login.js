@@ -9,14 +9,18 @@ form.addEventListener("submit", async (e) => {
   const senha = document.getElementById("senha").value;
 
   const { data, error } = await supabase.auth.signInWithPassword({
-    email: email,
+    email,
     password: senha
   });
 
-  if (error) {
-    alert("Erro no login: " + error.message);
-  } else {
-    alert("Login realizado com sucesso!");
-    window.location.href = "index.html";
+  if (error || !data.session) {
+    alert(error?.message || "Erro no login");
+    return;
   }
+
+  alert("Login realizado com sucesso!");
+
+  setTimeout(() => {
+    window.location.href = "index.html";
+  }, 300);
 });
