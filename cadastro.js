@@ -1,67 +1,21 @@
-const form =
-document.getElementById("cadastroForm");
+import { supabase } from "./supabase.js";
 
-form.addEventListener("submit", async (e)=>{
+const form = document.getElementById("formCadastro");
 
+form.addEventListener("submit", async (e) => {
   e.preventDefault();
 
-  const dados = {
+  const email = document.getElementById("email").value;
+  const senha = document.getElementById("senha").value;
 
-    nome:
-    document.getElementById("nome").value,
+  const { data, error } = await supabase.auth.signUp({
+    email: email,
+    password: senha
+  });
 
-    cpf:
-    document.getElementById("cpf").value,
-    
-    dataNascimento:
-    document.getElementById("dataNascimento").value,
-
-    endereco:
-    document.getElementById("endereco").value,
-
-    email:
-    document.getElementById("email").value,
-
-    telefone:
-    document.getElementById("telefone").value,
-
-    senha:
-    document.getElementById("senha").value
-
-  };
-
-  const url =
-  "https://script.google.com/macros/s/AKfycbyN3es_E3iqB2eNCI6Sol6G-i54cAricV6dgUR0nGjZiyZ6D0GFyQfaidG2fZUY6G5ixA/exec";
-
-  try{
-
-    await fetch(url,{
-
-      method:"POST",
-
-      mode:"no-cors",
-
-      headers:{
-        "Content-Type":"application/json"
-      },
-
-      body:JSON.stringify(dados)
-
-    });
-
+  if (error) {
+    alert("Erro no cadastro: " + error.message);
+  } else {
     alert("Cadastro realizado com sucesso!");
-
-    window.location.href =
-    "login.html";
-
   }
-
-  catch(erro){
-
-    console.log(erro);
-
-    alert("Erro de conexão");
-
-  }
-
 });
