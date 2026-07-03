@@ -1,6 +1,6 @@
 import { supabase } from "./supabase.js";
 
-const form = document.getElementById("formCadastro");
+const form = document.getElementById("cadastroForm");
 
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
