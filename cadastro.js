@@ -7,7 +7,7 @@ form.addEventListener("submit", async (e) => {
 
   const nome = document.getElementById("nome").value;
   const cpf = document.getElementById("cpf").value;
-  const data = document.getElementById("data").value;
+  const dataNascimento = document.getElementById("dataNascimento").value;
   const endereco = document.getElementById("endereco").value;
   const telefone = document.getElementById("telefone").value;
   const email = document.getElementById("email").value;
@@ -32,7 +32,7 @@ form.addEventListener("submit", async (e) => {
       id: authData.user.id,
       nome,
       cpf,
-      data_nascimento: data,
+      data_nascimento: dataNascimento,
       endereco,
       telefone,
       email
