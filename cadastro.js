@@ -1,5 +1,5 @@
 import { supabase } from "./supabase.js";
-
+console.log("cadastro.js carregado com sucesso 🚀");
 const form = document.getElementById("cadastroForm");
 
 form.addEventListener("submit", async (e) => {
