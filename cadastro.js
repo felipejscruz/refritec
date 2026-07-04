@@ -16,7 +16,16 @@ form.addEventListener("submit", async (e) => {
   const { data: authData, error: authError } =
     await supabase.auth.signUp({
       email,
-      password: senha
+      password: senha,
+      options: {
+        data: {
+          nome,
+          cpf,
+          data_nascimento: dataNascimento,
+          endereco,
+          telefone
+        }
+      }
     });
 
   if (authError || !authData.user) {
@@ -24,22 +33,6 @@ form.addEventListener("submit", async (e) => {
     return;
   }
 
-  const { error } = await supabase
-    .from("usuarios")
-    .insert({
-      id: authData.user.id,
-      nome,
-      cpf,
-      data_nascimento: dataNascimento,
-      endereco,
-      telefone,
-      email
-    });
-
-  if (error) {
-    alert(error.message);
-  } else {
-    alert("Cadastro realizado com sucesso!");
-    window.location.href = "login.html";
-  }
+  alert("Cadastro realizado com sucesso! Verifique seu e-mail para confirmar a conta.");
+  window.location.href = "login.html";
 });
